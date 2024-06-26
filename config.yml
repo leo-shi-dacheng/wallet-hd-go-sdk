@@ -1,0 +1,34 @@
+server:
+  port: 8189
+  timeout: 120s
+  sleep: 10s
+
+network: mainnet
+
+fullnode:
+  eth:
+    rpcs:
+      - rpc_url: 'https://eth-mainnet.nodereal.io/v1/1659dfb40aa24bbb8153a677b98064d7'
+    confirmations: 4
+    tp_api_url: 'https://api.etherscan.io/api?'
+    tp_api_key: 'W972DC11QYVEWRSWCRYHTT4H362PK43P8N'
+  arbi:
+    rpcs:
+      - rpc_url: 'https://rpc.ankr.com/arbitrum'
+    confirmations: 4
+    tp_api_url: 'https://api.arbiscan.io/api?'
+    tp_api_key: '6P1K37SEYSN8VMWFVYGC8W6K5ZEQ5CDA7Y'
+  op:
+    rpcs:
+      - rpc_url: 'https://mainnet.optimism.io'
+    confirmations: 4
+    tp_api_url: 'https://api-optimistic.etherscan.io/api?'
+    tp_api_key: 'X1SJQ62NAPMZ24DRBKA2GU414N6S6THUKQ'
+  polygon:
+    rpcs:
+      - rpc_url: 'https://polygon-bor.publicnode.com'
+    confirmations: 4
+    tp_api_url: 'https://api.polygonscan.com/api?'
+    tp_api_key: 'DCIEZ5TQSFY88QUTHQBKYG92I828A44ZRN'
+
+chains: [Ethereum, Arbitrum, Optimism, Polygon]
